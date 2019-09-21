@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include "projeto1.h"
 
+void clrscr()
+{
+    system("@cls||clear");
+}
+
 int main(){
 	
 	LISTA* lista = criar_lista();
@@ -21,6 +26,7 @@ int main(){
 		printf("(6) Sair\n");
 
 		scanf("%d", &n);
+		clrscr();
 
 		if (n>6){
 			printf("NÚMERO INVÁLIDO\n");
